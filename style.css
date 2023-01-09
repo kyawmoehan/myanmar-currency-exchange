@@ -1,0 +1,262 @@
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.converter {
+  width: 50%;
+  background-color: rgba(247, 249, 255, 0.8);
+  margin: 4rem auto;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* loading spinner */
+.lds-roller {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 5rem auto;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #333;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* form */
+.form {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+/* input form */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.webflow-style-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.8rem 1.4rem 0.8rem;
+  background: rgba(57, 63, 84, 0.8);
+}
+
+.webflow-style-input input {
+  flex-grow: 1;
+  color: #bfd2ff;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  vertical-align: middle;
+  width: 100%;
+}
+.webflow-style-input input::-webkit-input-placeholder {
+  color: #7881a1;
+}
+
+/* select */
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: 3.3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+}
+select {
+  flex: 1 1;
+  padding: 0 1em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+/* footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(247, 249, 255, 0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: black;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  margin-left: 1rem;
+  color: #2c3e50;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .converter {
+    width: 60%;
+  }
+
+  .webflow-style-input {
+    width: 60%;
+  }
+  .select {
+    width: 40%;
+  }
+}
+@media (max-width: 590px) {
+  .container {
+    width: 100%;
+  }
+  .converter {
+    width: 88%;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .webflow-style-input {
+    width: 50%;
+  }
+  .select {
+    width: 50%;
+  }
+}

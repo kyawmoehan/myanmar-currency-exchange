@@ -2,7 +2,7 @@
 
 The project is currency converter base on Myanmar Kyat currency. API is used from Central Bank of Myanmar to get Information about Currencies Exchange Rate.
 
-![Currency Conveter](./currency_converter.png)
+![Currency Conveter](./images/currency_converter.png)
 
 ## List of Countries Include
 

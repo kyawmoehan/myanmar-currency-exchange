@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Myanmar Currency Converter using api form Central Bank Of Myanmar">
@@ -14,22 +15,31 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
         <div class="container">
-            <div>
+            <div class="lds-roller" id="loading">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="hide" id="converter-content">
                 <div class="converter">
                     <h1 class="title">Myanmar Currency Converter</h1>
                     <div class="form">
                         <div class="webflow-style-input">
-                            <input type="number" value="1">
+                            <input type="number" value="1" id="countryInput">
                         </div>
                         <div class="select">
-                            <select>
-                                <option value="USD">United State Dollar</option>
+                            <select id="countries">
                             </select>
                         </div>
                     </div>
                     <div class="form">
                         <div class="webflow-style-input">
-                            <input type="number" value="2100">
+                            <input type="number" value="" id="myanmarInput">
                         </div>
                         <div class="select">
                             <select>
@@ -44,7 +54,7 @@
             </footer>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,10 @@
   margin: auto;
 }
 
+.hide{
+  display: none;
+}
+
 .title {
   text-align: center;
   font-weight: bold;
@@ -20,7 +24,7 @@
 
 /* loading spinner */
 .lds-roller {
-  display: block;
+  /* display: block; */
   position: relative;
   width: 80px;
   height: 80px;

@@ -1,6 +1,8 @@
-# Myanmar Currency Converter with React
+# Myanmar Currency Converter
 
 The project is currency converter base on Myanmar Kyat currency. API is used from Central Bank of Myanmar to get Information about Currencies Exchange Rate.
+
+Note: For api to work go to https://cors-anywhere.herokuapp.com/ and click "Request temporary access to the demo server".
 
 ![Currency Conveter](./images/currency_converter.png)
 
